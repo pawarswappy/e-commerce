@@ -1,0 +1,1082 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.secton-p1 {
+    padding: 40px 80px;
+}
+
+.secton-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+/* header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: aliceblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3 ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a:active {
+    color: green;
+    /* font-size: 20px; */
+    /* text-decoration: underline; */
+}
+
+#navbar li a:active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 38%;
+    height: 2px;
+    background: green;
+    position: absolute;
+    bottom: -4px;
+    left: 40px;
+}
+
+/* home */
+#hero {
+    background-image: url("https://img.freepik.com/premium-photo/photo-guy-menswear-jacket-advertisement-guy-menswear-outdoor-guy-menswear_474717-116732.jpg");
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero p {
+    color: black;
+}
+
+#hero button {
+    background-image: url("/hotel-and-more-project/hospital/era/button.png");
+    background-color: transparent;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+/* features */
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid wheat;
+    border-radius: 4px;
+    margin: 15px 0;
+
+}
+
+#feature .fe-box {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: goldenrod;
+    background-color: aliceblue;
+}
+
+/* product */
+#product1 {
+    text-align: center;
+
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid lavender;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: rgb(44, 101, 103);
+    font-size: 12px;
+
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #222;
+
+}
+
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: gold;
+
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: teal;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40p;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    font-weight: 500px;
+    color: green;
+    border: 1px solid beige;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/hotel-and-more-project/hospital/era/banner.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    text-transform: capitalize;
+}
+
+#banner h4 {
+    color: white;
+    text-transform: capitalize;
+}
+
+#banner h2 span {
+    color: red;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+#banner h2 {
+    color: white;
+}
+
+#banner button:hover {
+    font-size: 20px;
+
+}
+
+/* small banner */
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("/hotel-and-more-project/hospital/era/banner2.png");
+    min-width: 600px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    text-transform: capitalize;
+    padding: 30px;
+
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("/hotel-and-more-project/hospital/era/banner4.png");
+}
+
+#sm-banner .banner-box:hover button {
+    background-color: rgb(61, 94, 12);
+    border: 1px solid black;
+
+}
+
+#sm-banner {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("/hotel-and-more-project/hospital/era/banner5.png");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    text-transform: capitalize;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#banner3 h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3 {
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#banner3 {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 60px;
+}
+
+#banner3 .banner-box2 {
+    background-image: url("/hotel-and-more-project/hospital/era/banner6.png");
+
+}
+
+#banner3 .banner-box3 {
+    background-image: url("/hotel-and-more-project/hospital/era/banner3.png");
+
+}
+
+#newsletter {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background-image: url("/hotel-and-more-project/hospital/era/background.png");
+    background-repeat: no-repeat;
+    /* background-position: 20% 30%; */
+    background-size: cover;
+    background-color: #222;
+    margin-top: 20px;
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: aliceblue;
+
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: aliceblue;
+
+}
+
+#newsletter p span {
+    color: red;
+}
+
+#newsletter input {
+    height: 3.123rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+
+}
+
+#newsletter button {
+    background-color: rgb(7, 114, 87);
+    color: aliceblue;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+
+}
+
+footer .follow i {
+    color: #222;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install img {
+    width: 180px;
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: red;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/* shop */
+#page-header {
+    background-image: url("/hotel-and-more-project/hospital/era/background.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    padding: -14px;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #bd4c4c;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 20px;
+}
+
+/* singal  product */
+#prodetail .single-pro-image {
+    width: 40%;
+    margin-left: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetail {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#prodetail .single-pro-detail {
+    width: 50%;
+    padding-top: 30px;
+    margin-left: 40px;
+}
+
+#prodetail .single-pro-detail h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetail .samll-pro-detail h2 {
+    font-size: 26px;
+}
+
+#prodetail .single-pro-detail select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetail .single-pro-detail input {
+    height: 47px;
+    width: 50px;
+    font-size: 14px;
+    padding-left: 16px;
+    margin-right: 10px;
+}
+
+#prodetail .single-pro-detail button {
+    background-color: rgb(7, 114, 87);
+    color: white;
+}
+
+#prodetail .single-pro-detail span {
+    line-height: 25px;
+}
+
+
+
+/* blog section */
+#page-header.blog-header {
+    background-image: url("/hotel-and-more-project/hospital/era/b19.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    padding: -14px;
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details {
+    width: 50%;
+}
+
+#blog .blog-details a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #222;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #0a633c;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover {
+    color: #0a633c;
+}
+
+#blog .blog-details a:hover::after {
+    background-color: #0a633c;
+}
+
+#blog .blog-box h1 {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(230, 169, 94);
+    z-index: -9;
+}
+
+/* about */
+#page-header.about-header {
+    background-image: url("/hotel-and-more-project/hospital/era/b19.jpg");
+
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#about-head div {
+    padding-left: 20px;
+}
+
+#about-app {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+
+}
+
+#about-app .video video {
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+/* contact */
+#page-header.contact-header {
+    background-image: url("/hotel-and-more-project/hospital/era/b2.jpg");
+
+}
+
+/* cart */
+#cart {
+    overflow-x: auto;
+}
+#cart table{
+width: 100%;
+border-collapse: collapse;
+table-layout: fixed;
+white-space: nowrap;
+margin-top: 20px;
+}
+#cart table img{
+    width: 70px;
+}
+/* #cart table td{
+    text-align: center;
+} */
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+width: 250px;
+text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),#cart table td:nth-child(5),#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border: 1px solid rgb(125, 118, 118);
+    border-left:none ;
+    border-right:none ;
+
+}
+#cart table thead td
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td{
+    padding: 15px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ #coupon{
+width: 50%;
+margin-bottom: 30px;
+}
+#coupon h3 ,#subtotal h3{
+    padding-bottom: 15px;
+}
+#coupon input{ 
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid rgb(152, 148, 148);
+}
+#coupon button,#subtotal button{
+    background-color: #0a633c;
+    color: white;
+    padding: 12px 20px;
+}
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;   
+    border:  1px solid rgb(50, 49, 48);
+    padding: 30px;
+}
+#subtotal table{
+    border-collapse:collapse ;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    width: 50%;
+    border: 1px solid rgb(52, 53, 53);
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* responsive */
+@media (max-width:799px) {
+    .secton-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: aliceblue;
+        box-shadow: 0 40px 60px #222;
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: black;
+        font-size: 24px;
+        padding-left: 20px;
+
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #close {
+        display: inherit;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+        /* margin: 25px 25px; */
+
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box {
+        min-height: 100%;
+        height: 30vh;
+
+    }
+
+    #banner3 {
+        padding: 0 80px;
+    }
+
+    #banner3 .banner-box {
+        width: 32%;
+    }
+
+    #newsletters .form {
+        width: 70%;
+    }
+}
+
+@media (max-width:477px) {
+    #header {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    #feature {
+        justify-content: space-around;
+    }
+
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #product1 .pro {
+        width: 100%;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+
+    #banner3 {
+        padding: 0 20px;
+    }
+
+    #banner .banner-box {
+        width: 100%;
+    }
+
+    #newsletter {
+        padding: 40px 20px;
+        height: 30vh;
+    }
+
+    #newsletter .form {
+        width: 100%;
+    }
+
+    footer .copyright {
+        text-align: start;
+    }
+
+    #prodetail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetail .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetail .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetail .single-pro-detail {
+        width: 100%;
+        /* padding-top:30px ; */
+    }
+
+    /* blog */
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box {
+        width: 200%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #blog .blog-details {
+        width: 50%;
+    }
+
+    /* about */
+    #about-head {
+        flex-direction: column;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
+    /* contact */
+    #cart-add{
+        flex-direction: column;
+    }
+    #coupon{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 20px;
+
+    }
+    #subtotal{
+        width: 100%;
+        margin-bottom: 30px;
+        border: 1px solid aliceblue;
+        padding: 30px;
+    }
+
+
+
+
+}
