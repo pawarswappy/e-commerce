@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel_Ambassador_Admin</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <h1>Hotel Ambassador Plaza</h1>
+        </nav>
+
+            <div class="tablediv">
+                <table border="" style="text-transform: uppercase; color: rgb(234, 129, 81);">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer Name</th>
+                            <th>Mobile No</th>
+                            <th>Adhar ID</th>
+                            <th>Form-Date</th>
+                            <th>To-Date</th>
+                            <th>No-Of-Adult</th>
+                            <th>No-Of-Child</th>
+                            <th>Room-Details</th>
+                            <th>Payment Cash/Online</th>
+                            <th>Remove Details</th>
+                            <th>Generate Invoice </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+
+            <script>
+                const URL = "https://673ebc4ba9bc276ec4b579c0.mockapi.io/com/Hotel_Ambassador";
+                let tab = "";
+
+                const getData = async () => {
+                    try {
+                        const response = await fetch(URL);
+                        const data = await response.json();
+
+                        data.forEach((item) => {
+                            tab += `<tr id="row-${item.id}">
+                        <td>${item.id}</td>
+                        <td>${item.customerName}</td>
+                        <td>${item.mobileNo}</td>
+                        <td>${item.adharID}</td>
+                        <td>${item.fromDate}</td>
+                        <td>${item.toDate}</td>
+                        <td>${item.noOfAdult}</td>
+                        <td>${item.noOfChild}</td>
+                        <td>${item.Room}</td>
+                        <td>${item.payment}</td>
+                        <td><button style="background-color: transparent; color:white " onclick="deleteRow(${item.id})" class="btn btn-danger">Remove</button></td>
+                        <td><button style="background-color: transparent; color:white " onclick="deleteRow(${item.id})" class="btn btn-danger">Generate</button></td>
+                    </tr>`;
+                        });
+
+                        document.getElementById("tbody").innerHTML = tab;
+                    } catch (error) {
+                        console.error("Error fetching data:", error);
+                    }
+                };
+
+                const deleteRow = async (id) => {
+                    try {
+                        const response = await fetch(`${URL}/${id}`, {
+                            method: "DELETE",
+                        });
+
+                        if (response.ok) {
+                            // Remove row from the table
+                            const row = document.getElementById(`row-${id}`);
+                            row.parentNode.removeChild(row);
+
+                            console.log(`Record with ID ${id} deleted successfully`);
+                        } else {
+                            console.error(`Failed to delete record with ID ${id}`);
+                        }
+                    } catch (error) {
+                        console.error("Error deleting record:", error);
+                    }
+                };
+
+                getData();
+            </script>
+
+
+</body>
+
+</html>

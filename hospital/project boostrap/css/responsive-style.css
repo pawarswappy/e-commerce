@@ -66,6 +66,33 @@
 
     }
 
+    
+
+
+}
+
+@media(max-width:1024px){
+    .service-menu-area{
+        position: relative;
+        top: 13px;
+    }
+    .service-menu-area ul li a .service-icon{
+        width: 80px;
+        height: 80px;
+        font-size: 5px;
+        position: relative;
+        left: 60px;
+    }
+    .service-menu-area ul li a h5{
+        font-size: 25px;
+        position: relative;
+        left: 40px;
+    }
+    .service-menu-area ul li a p{
+        font-size: 15px;
+        position: relative;
+        left: 40px;
+    }
 
 }
 
@@ -125,12 +152,22 @@
         font-size: 1rem;
 
     }
+    .infomain {
+        display: block;
+
+    }
 
 
 
 }
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
+
     /* custome css */
+    .aboutflex{
+        position: relative;
+        top: 170px;
+    }
 
     h1{
         font-size: 1.875rem;
@@ -157,10 +194,95 @@
     .footer_wrapper > div{
         padding: 0 1.875rem;
     }
+    .about_wrapper{
+        margin-top: 230px;
+    }
+    .infomain {
+        display: block;
+
+    }
+    
+
+}
+@media (max-width: 475px) {
+    .aboutflex{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 170px;
+    }
+    /* .aboutflex1{
+        position: relative;
+        top: 400px;
+    } */
+    /* .img-fluid1{
+        position: relative;
+        top: 320px;
+    } */
+
+    .rooms_wrapper{
+        position: relative;
+        top: 180px;
+    }
+    .services_wrapper{
+        position: relative;
+        top: 150px;
+    }
+    .team_wrapper{
+        position: relative;
+        top: 200px;
+    }
+    .service20{
+        position: relative;
+        left: -50px;
+        width: 100%;
+    }
+    .service-menu-area p{
+        width: 100%;
+        /* padding: 0px 0px 0px 0px; */
+        /* margin: 0px; */
+    }
+    .infomain {
+        display: block;
+
+    }
 
 }
 
 
+@media (max-width: 320px) {
+    .aboutflex{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 170px;
+    }
+    /* .aboutflex1{
+        position: relative;
+        top: 400px;
+    }
+    .img-fluid1{
+        position: relative;
+        top: 320px;
+    } */
+    .rooms_wrapper{
+        position: relative;
+        top: 250px;
+    }
+    .services_wrapper{
+        position: relative;
+        top: 200px;
+    }
+    .team_wrapper{
+        position: relative;
+        top: 200px;
+    }
+     /* .service-menu-area ul li a p{ */
+        /* margin: 0%; */
+        /* padding: 0%; */
+    /* }  */
+
+}
 
 
 

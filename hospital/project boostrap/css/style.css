@@ -36,7 +36,7 @@
 .header_wrapper {
     position: fixed;
     z-index: 100;
-    margin-top:10px ;
+    /* margin-top:10px ; */
     width: 100%;
     /* left: 0; */
  /*    right: 0;  */
@@ -283,6 +283,7 @@ p{
 
 .about_wrapper{
     padding-top: 9.375rem;
+    margin-top: 100px;
 }
 
 /* rooms */
@@ -652,3 +653,50 @@ p{
     border-color: var(--secondary-color);
 }
 
+.row .card h5{
+    line-height: 30px;
+}
+
+.book-now{
+    display: flex;
+    justify-content: center;
+}
+/* .rounded-15{
+    display: flex;
+    justify-content: center;
+} */
+ .form-control1 input{
+    border: none;
+    height: 100%;
+ }
+ .form-control1 input:hover{
+    border: none;
+    
+ }
+ .infomain .form-control1 input::placeholder{
+    color: #021832;
+
+
+ }
+ .infomain .form-control1 input{
+    width: 100%;
+ }
+ .infomain{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+ }
+ #room-Details{
+    height: 100%;
+    border: none;
+
+ }
+ #room-Details:hover{
+    border: none;
+ }
+
+ /* #myForm .infomain .form-control1 select option p{
+    width: 50px;
+    background: #000;
+
+ } */
